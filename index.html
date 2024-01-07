@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <title>Helix Deathmatch</title>
+</head>
+<body >
+  <div class="container hide">
+    <div class="bg"></div>
+    <div class="tab-buttons">
+      <section>
+        <div onclick="back()">ESC</div>
+        <p>BACK</p>
+      </section>
+    </div>
+    <main>
+      <h1>LEADERBOARD</h1>
+      <div class="forces">
+        <section class="attacking">
+          <header>
+            <h2>ATTACKING FORCES</h2>
+            <p class="attacking-team-status"></p>
+          </header>
+          <div>
+            <section class="titles">
+              <p>Players</p>
+              <p class="medium">Kills</p>
+              <p class="medium">Deaths</p>
+              <p class="medium">Score</p>
+            </section>
+            <section class="players attacking-team"></section>
+            <section class=" scores">
+              <p></p>
+              <div>
+                <p class="score-title attacking-team-score"></p>
+                <h3 class="totalAttackingForcesScore"></h3>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="defending">
+          <header>
+            <h2>DEFENDING FORCES</h2>
+            <p class="defending-team-status"></p>
+          </header>
+          <div>
+            <section class="titles">
+              <p>Players</p>
+              <p class="medium">Kills</p>
+              <p class="medium">Deaths</p>
+              <p class="medium">Score</p>
+            </section>
+            <section class="players defending-team"></section>
+          </div>
+          <section class=" scores">
+            <p></p>
+            <div>
+              <p class="score-title defending-team-score"></p>
+              <h3 class="totalDefendingForcesScore"></h3>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
